@@ -15,7 +15,14 @@
     .project-links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:12px}
     .project-visual{min-height:0;aspect-ratio:16/9}
     .project-card.featured .project-visual{min-height:0}
+    .contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .contact-link{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px;border:1px solid var(--line);background:rgba(255,255,255,.5);transition:transform .2s,border-color .2s,background .2s}
+    .contact-link:hover{transform:translateY(-2px);border-color:var(--signal);background:var(--white)}
+    .contact-label{display:block;margin-bottom:3px;font:800 10px Inter;letter-spacing:.12em;color:var(--signal)}
+    .contact-value{display:block;font-size:16px;font-weight:700;word-break:break-all}
+    .contact-arrow{flex:none;font-size:18px;color:var(--signal)}
     @media(max-width:680px){.project-card.featured{grid-column:auto}}
+    @media(max-width:680px){.contact-grid{grid-template-columns:1fr}.contact-link{padding:20px}}
   </style>
 </head>
 <body>
@@ -27,6 +34,7 @@
       <a href="#concepts">Concept</a>
       <a href="#skills">Skills</a>
       <a href="#projects">R&amp;D</a>
+      <a href="#contact">Contact</a>
     </nav>
     <a class="ghost-btn" href="https://github.com/ptk3917/robotics-portfolio" target="_blank" rel="noreferrer">SOURCE ↗</a>
   </header>
@@ -112,6 +120,30 @@
         <h2>학력</h2>
       </div>
       <div id="education-list" class="education-list"></div>
+    </section>
+
+    <section id="contact" class="section-wrap section-block contact-section">
+      <div class="section-heading">
+        <p class="eyebrow"><span>08</span> CONTACT</p>
+        <h2>함께 이야기해 주세요.</h2>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-link" href="mailto:ptk3917@gmail.com">
+          <span><span class="contact-label">EMAIL</span><span class="contact-value">ptk3917@gmail.com</span></span><span class="contact-arrow">↗</span>
+        </a>
+        <a class="contact-link" href="https://github.com/ptk3917" target="_blank" rel="noreferrer">
+          <span><span class="contact-label">GITHUB</span><span class="contact-value">github.com/ptk3917</span></span><span class="contact-arrow">↗</span>
+        </a>
+        <a class="contact-link" href="https://github.com/ptk3917/robotics-portfolio" target="_blank" rel="noreferrer">
+          <span><span class="contact-label">ROBOTICS PORTFOLIO</span><span class="contact-value">Public project evidence</span></span><span class="contact-arrow">↗</span>
+        </a>
+        <a class="contact-link" href="https://instagram.com/tk_park_0316" target="_blank" rel="noreferrer">
+          <span><span class="contact-label">INSTAGRAM</span><span class="contact-value">@tk_park_0316</span></span><span class="contact-arrow">↗</span>
+        </a>
+        <a class="contact-link" href="tel:+821033543917">
+          <span><span class="contact-label">PHONE</span><span class="contact-value">+82 10-3354-3917</span></span><span class="contact-arrow">↗</span>
+        </a>
+      </div>
     </section>
   </main>
 
