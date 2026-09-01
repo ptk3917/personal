@@ -2,8 +2,8 @@ window.PORTFOLIO_DATA = {
   experience: [
     {
       period: '2024.10 — Present',
-      title: 'AIXERA (구 에스엠해썹) · AX팀 / Physical AI',
-      body: '식품·바이오 제조현장에서 협동로봇, 머신비전, 산업통신, 센서 데이터 수집 및 운영 소프트웨어를 연결하는 자동화 시스템을 개발하고 있습니다.'
+      title: 'AIXERA (구 에스엠해썹) · AX본부 Physical AI팀 / R&D',
+      body: '사명과 조직 개편 이후 AX본부 Physical AI팀에서 협동로봇, 머신비전, 산업통신, 센서 데이터와 운영 소프트웨어를 연결하는 현장 자동화 R&D를 수행하고 있습니다.'
     },
     {
       period: '2022.08 — 2024.08',
