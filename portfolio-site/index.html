@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="박태경 Robotics / Physical AI System Engineer Portfolio" />
+  <title>TK | Robotics & Physical AI System Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">TK<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#concepts">Concept</a>
+      <a href="#skills">Skills</a>
+    </nav>
+    <a class="ghost-btn" href="https://github.com/ptk3917/robotics-portfolio" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">ROBOTICS · PHYSICAL AI · INDUSTRIAL AUTOMATION</p>
+        <h1>현장에서 실제로 동작하는<br><span>로봇 시스템</span>을 만듭니다.</h1>
+        <p class="hero-lead">로봇팔, 비전, 센서, 산업통신, 운영 소프트웨어를 연결해 공정을 자동화하고, 실패 원인을 직접 측정하고 개선하는 엔지니어 박태경입니다.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#projects">프로젝트 보기</a>
+          <a class="secondary-btn" href="https://github.com/ptk3917/robotics-portfolio" target="_blank" rel="noreferrer">Robotics Portfolio ↗</a>
+        </div>
+        <div class="hero-meta">
+          <span>Fairino FR5</span><span>ROS2</span><span>Python</span><span>RGB-D</span><span>Industrial IoT</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="status-dot"></div>
+        <p class="mini-label">CURRENT FOCUS</p>
+        <h2>Robot Runtime & Field Integration</h2>
+        <p>공정 시퀀스, 센서 입력, 로봇 동작, 예외 처리, 로그를 하나의 운영 흐름으로 연결하는 시스템을 개발하고 있습니다.</p>
+        <div class="hero-card-grid">
+          <div><strong>6-axis</strong><span>Robot Manipulation</span></div>
+          <div><strong>RGB-D</strong><span>Vision & Calibration</span></div>
+          <div><strong>ROS2</strong><span>Task Flow</span></div>
+          <div><strong>IIoT</strong><span>Field Data</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-wrap section-block">
+      <div class="section-heading">
+        <p class="eyebrow">ABOUT</p>
+        <h2>하드웨어부터 운영까지 연결합니다.</h2>
+      </div>
+      <div class="about-grid">
+        <p>석사과정에서 6축 산업용 로봇 기반 적층제조를 연구했고, 현재는 제조 현장에서 협동로봇·머신비전·센서·PLC/Modbus·Raspberry Pi·DB를 직접 연동하고 있습니다. 기능 하나를 만드는 데서 끝나지 않고 실제 장비에서 반복 동작시키고, 문제가 생기면 신호와 로그를 분리해 원인을 찾아가는 방식으로 일합니다.</p>
+        <p>최근에는 FR5 로봇과 촉각센서를 이용한 제품 자동 체킹 시스템, 자연어 비전 픽킹, YOLO OBB 방향 정렬, ROS2 기반 식판 검증, Unity 디지털 트윈, 벽 장착 로봇 충돌 오탐 진단 등을 진행했습니다.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="section-wrap section-block">
+      <div class="section-heading">
+        <p class="eyebrow">EXPERIENCE</p>
+        <h2>경력 및 연구</h2>
+      </div>
+      <div id="experience-list" class="timeline"></div>
+    </section>
+
+    <section id="projects" class="section-wrap section-block">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">SELECTED PROJECTS</p>
+          <h2>실제로 구현하고 검증한 프로젝트</h2>
+        </div>
+        <p class="section-note">완료·검증한 범위만 기재하며, 미완료 항목은 별도로 표시합니다.</p>
+      </div>
+      <div id="project-grid" class="project-grid"></div>
+    </section>
+
+    <section id="concepts" class="section-wrap section-block">
+      <div class="concept-card">
+        <div>
+          <p class="eyebrow">CONCEPT / ARCHITECTURE PROPOSAL</p>
+          <h2>Failure Hub</h2>
+          <p>현장에서 반복되는 로봇·비전·PLC·센서 장애를 일회성 대응으로 끝내지 않고, 상태와 실패 데이터를 같은 Task 기준으로 수집해 재현·분석할 수 있도록 사내에 제안한 시스템 아키텍처입니다.</p>
+        </div>
+        <div class="concept-flow">
+          <span>Robot / Vision / PLC / Sensor</span><b>→</b><span>Task Sync & Logging</span><b>→</b><span>Failure Replay</span><b>→</b><span>Root Cause & Reuse</span>
+        </div>
+        <p class="disclaimer">※ 제품 개발 완료 실적이 아니라 사내 제안 및 아키텍처 기획 경험입니다.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section-wrap section-block">
+      <div class="section-heading">
+        <p class="eyebrow">SKILLS</p>
+        <h2>기술 스택</h2>
+      </div>
+      <div id="skills-grid" class="skills-grid"></div>
+    </section>
+
+    <section class="section-wrap section-block education-section">
+      <div class="section-heading">
+        <p class="eyebrow">EDUCATION</p>
+        <h2>학력</h2>
+      </div>
+      <div id="education-list" class="education-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>TK · 박태경</strong>
+      <span>Robotics / Physical AI System Engineer</span>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/ptk3917" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://github.com/ptk3917/robotics-portfolio" target="_blank" rel="noreferrer">Portfolio Repo</a>
+    </div>
+  </footer>
+
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
