@@ -19,7 +19,7 @@ projectGrid.innerHTML = data.projects.map(project => `
     </div>
     <p class="project-summary">${project.summary}</p>
     <ul class="project-list">${project.bullets.map(b => `<li>${b}</li>`).join('')}</ul>
-    <div class="project-footer"><div class="project-stack">${project.stack.map(s => `<span>${s}</span>`).join('')}</div>${project.evidence ? `<a class="evidence-link" href="${project.evidence}" target="_blank" rel="noreferrer">근거 문서 ↗</a>` : ''}</div>
+    <div class="project-footer"><div class="project-stack">${project.stack.map(s => `<span>${s}</span>`).join('')}</div><div class="project-links">${project.media ? project.media.map(item => `<a class="evidence-link" href="${item.href}" target="_blank" rel="noreferrer">${item.label} ↗</a>`).join('') : ''}${project.evidence ? `<a class="evidence-link" href="${project.evidence}" target="_blank" rel="noreferrer">근거 문서 ↗</a>` : ''}</div></div>
     </div>
   </article>
 `).join('');

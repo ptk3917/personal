@@ -11,6 +11,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
+  <style>
+    .project-links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:12px}
+    .project-visual{min-height:0;aspect-ratio:16/9}
+    .project-card.featured .project-visual{min-height:0}
+    @media(max-width:680px){.project-card.featured{grid-column:auto}}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -115,6 +121,7 @@
       <span>Robotics / Physical AI System Engineer</span>
     </div>
     <div class="footer-links">
+      <a href="mailto:ptk3917@gmail.com">Email</a>
       <a href="https://github.com/ptk3917" target="_blank" rel="noreferrer">GitHub</a>
       <a href="https://github.com/ptk3917/robotics-portfolio" target="_blank" rel="noreferrer">Portfolio Repo</a>
     </div>

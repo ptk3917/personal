@@ -77,6 +77,18 @@ window.PORTFOLIO_DATA = {
       summary: '현장 설비와 센서를 Raspberry Pi 기반 Edge Node에서 수집해 DB·MQTT·알림으로 연결했습니다.',
       bullets: ['Modbus TCP/RTU, RS232/RS485, Socket, MQTT 연동','MariaDB/SQLite 저장 및 Flask 기반 데이터 전달','systemd 자동실행, 재시도, 장애복구, Slack 헬스체크','금속검출기·수위·온도 등 제조 현장 신호 통합'],
       stack: ['Raspberry Pi','Modbus','MQTT','MariaDB','Linux']
+    },
+    {
+      title: '6축 로봇 기반 3D 프린팅 바이오 천장 패널 연구',
+      badge: 'MASTER RESEARCH', status: '석사 연구 완료', statusType: 'complete',
+      image: './assets/bio-panel-experiment.jpg', imageAlt: '3D 프린팅 바이오 천장 패널 실험',
+      summary: '6축 산업용 로봇과 Rhino·Grasshopper를 활용해 바이오 소재 천장 패널의 설계와 적층제조 공정을 연구했습니다.',
+      bullets: ['Rhino·Grasshopper 기반 패널 형상과 로봇 적층 경로 생성','Yaskawa 6축 로봇을 활용한 바이오 소재 적층 실험','공정 중 이미지를 활용하는 보정 구조와 캘리브레이션 연구','2024년 아주대학교 공과대학원 스마트융합건축학과 석사 연구 자료로 정리'],
+      stack: ['Yaskawa 6-axis','Rhino','Grasshopper','G-code','Additive Manufacturing'],
+      media: [
+        { label: '연구 PDF', href: './assets/bio-ceiling-panel-thesis.pdf' },
+        { label: '공정 영상', href: './assets/robot-printing-process.mp4' }
+      ]
     }
   ],
   skills: [
